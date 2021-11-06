@@ -2,15 +2,18 @@ package me.didilusse.discord;
 
 
 
-import me.didilusse.email.*;
+import me.didilusse.email.JavaMailSearchInbox;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 
 public class Ping extends ListenerAdapter {
 	
-	
+	private String email, password;
+	public Ping(String email, String password) {
+		this.email = email;
+		this.password = password;
+	}
 	
 	@Override
 	public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
@@ -20,7 +23,7 @@ public class Ping extends ListenerAdapter {
 		if(message.length == 1 && message[0].equalsIgnoreCase("!email")){
 			try {
 				
-				int emails = JavaMailSearchInbox.check();
+				int emails = JavaMailSearchInbox.check(email, password);
 				
 				System.out.println("Called Check");
 				if(emails >= 1) {

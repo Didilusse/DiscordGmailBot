@@ -20,15 +20,11 @@ import org.apache.commons.io.IOUtils;
 public class JavaMailSearchInbox {
 	
 		public static int Unread = 0;
-		 public static void main( ) throws Exception {
-			 
-			    
-			  }
 		 
 		 
-		 public static String email = "ENTER EMAIL HERE";
-		 public static String password = "ENTER PASSWORD HERE";
-		 public static int check() throws Exception{
+//		 public static String email = "didilusse@gmail.com";
+//		 public static String password = "pellpommozblnbpj";
+		 public static int check(String email, String password) throws Exception{
 			 Session session = Session.getDefaultInstance(new Properties( ));
 			    Store store = session.getStore("imaps");
 			    store.connect("imap.googlemail.com", 993, email, password);
