@@ -8,9 +8,10 @@ I started learning Java about a 2 days ago (11/2/21). I wanted to make a discord
   
   - I want to thank Stack Overflow for carrying this project
   - Download the project
-  - [Enter your bot token in Bot.java](https://www.writebots.com/discord-bot-token/)
-  -  Enter your email and password in JavaMailSearchInbox.java
+  - [Enter your bot token in Data.txt](https://www.writebots.com/discord-bot-token/)
+  -  Enter your email and password in Data.txt
   - [Make sure to use an app password and not your actual password](https://support.google.com/accounts/answer/185833?hl=en)
+  - Run Launcher.bat and type !email in your discord server(The bot must be in the server)
 
 ### Prerequisites
 
