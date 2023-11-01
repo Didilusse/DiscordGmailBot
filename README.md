@@ -4,8 +4,6 @@
 I started learning Java about a 2 days ago (11/2/21). I wanted to make a discord bot that would be useful and useable. So I decided to use Java Mail API and JDA to make this bot that tells you if you have any unread emails.
 
 ## Getting Started
-
-  
   - I want to thank Stack Overflow for carrying this project
   - Download the project
   - [Enter your bot token in Data.txt](https://www.writebots.com/discord-bot-token/)
